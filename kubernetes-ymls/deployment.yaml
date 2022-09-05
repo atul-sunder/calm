@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calm
+  labels:
+    app: calm
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: calm
+  template:
+    metadata:
+      labels:
+        app: calm
+    spec:
+      containers:
+        - name: calm
+          imagePullPolicy: IfNotPresent
+          image: clammyregistry.azurecr.io/samples/calm:latest

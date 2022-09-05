@@ -9,7 +9,7 @@ $ git config --global user.email "atulsunder786@gmail.com"
 
 docker build . -t calm:1.0.0
 
-# Use full docker command 
+# Useful docker command 
 -- Alka to update
 
 
