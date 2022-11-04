@@ -19,6 +19,8 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 9090
+      imagePullSecrets:
+        - name: acr-secret
 
 ---
 
